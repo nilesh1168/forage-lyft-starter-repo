@@ -1,0 +1,15 @@
+from engine.Engine import Engine
+
+class SternmanEngine(Engine):
+    def __init__(self, warning_light_is_on):
+        self.warning_light_is_on = warning_light_is_on
+
+    def needsServicing(self):
+        if self.warning_light_is_on:
+            return True
+        else:
+            return False
+        
+
+    def __str__(self) -> str:
+        return "Sternman"
