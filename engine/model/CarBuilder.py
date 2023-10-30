@@ -11,6 +11,9 @@ class CarBuilder(Builder):
     def buildBattery(self, battery):
         self.car.setBattery(battery)
 
+    def buildTire(self, tire):
+        self.car.setTire(tire)
+        
     def build(self):
         car = self.car
         print(car)

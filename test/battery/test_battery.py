@@ -33,7 +33,7 @@ class TestSpindler(unittest.TestCase):
 
     def test_battery_should_not_be_serviced(self):
         today = datetime.now()
-        last_service_date = today.replace(year=today.year - 1)
+        last_service_date = today.replace(year=today.year - 2)
 
         battery = Spindler(last_service_date)
 

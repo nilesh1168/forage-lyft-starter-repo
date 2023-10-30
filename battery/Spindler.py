@@ -7,7 +7,7 @@ class Spindler(Serviceable):
         self.lastServiceDate = lastServiceDate
 
     def needsServicing(self):
-        service_threshold_date = self.lastServiceDate.replace(year=self.lastServiceDate.year + 2)
+        service_threshold_date = self.lastServiceDate.replace(year=self.lastServiceDate.year + 3)
         if service_threshold_date < datetime.datetime.now():
             return True
         else:
